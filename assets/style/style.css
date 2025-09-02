@@ -540,8 +540,8 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-}
-.NewExp .Left{
+
+.Left{
     width: calc(55vw - 120px);
     display: flex;
     flex-direction: column;
@@ -551,7 +551,7 @@ nav{
         max-height: 500px;
     }
 }
-.NewExp .Right{
+.Right{
     width: calc(42vw - 120px);
     color: var(--white-color);
     text-align: right;
@@ -575,8 +575,8 @@ nav{
                 padding-left: 10px;
             }
         }
-    }}
-    .NewExp .Right button{
+    }
+    button{
         margin-top: 10px;
         width: 100%;
         background-color: var(--red-colot);
@@ -587,24 +587,24 @@ nav{
         border: none;
         border-radius: 10px;
     }
-
-.NewExp .Right button:hover{
+}
+.Right button:hover{
     background-color: #c0392b;
 }
-
+}
 
 @media (max-width: 1200px){
     .NewExp{
     width: 100vw;
     flex-direction: column;
-    gap: 50px;}
+    gap: 50px;
 
-.NewExp .Left{
+.Left{
     width: 100%;
     gap: 40px;
     margin: 0 auto;
 }
-.NewExp .Right{
+.Right{
     margin: 0 auto;
     width: 100%;
     h1{
@@ -621,11 +621,11 @@ nav{
             }
         }
     }
-    .NewExp button{
+    button{
         font-size: 24px;
     }
 }
-
+}
 }
 
 @media (max-width: 920px){
