@@ -575,7 +575,7 @@ nav{
                 padding-left: 10px;
             }
         }
-    }
+    }}
     .NewExp button{
         margin-top: 10px;
         width: 100%;
@@ -587,7 +587,7 @@ nav{
         border: none;
         border-radius: 10px;
     }
-}
+
 .NewExp .Right button:hover{
     background-color: #c0392b;
 }
