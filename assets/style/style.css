@@ -576,7 +576,7 @@ nav{
             }
         }
     }}
-    .NewExp button{
+    .NewExp .Right button{
         margin-top: 10px;
         width: 100%;
         background-color: var(--red-colot);
