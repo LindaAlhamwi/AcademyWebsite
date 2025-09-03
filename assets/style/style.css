@@ -307,29 +307,35 @@ nav{
     flex-shrink: 0;
     text-align: center;
     overflow: hidden;
+    padding-bottom: 15px;
 }
-
+.card .imgCo{
+width: 100%;
+height: 180px;
+overflow: hidden;
+margin-bottom: 20px;
+}
 .card img {
     width: 100%;
-    height: 400px;
     object-fit: cover;
+
 }
 
 .card-content {
-    padding: 20px;
+    padding: 5px;
 }
 
 .card h3 {
-    margin: 0 0 5px;
+    /* margin: 0 0 5px; */
     font-weight: 700;
-    font-size: 32px
+    font-size: 24px
 }
 
 .card p {
     margin: 0 0 15px;
     font-weight: 400;
-    font-size: 24px;
-    padding-bottom: 40px;
+    font-size: 18px;
+    padding-bottom: 20px;
     border-bottom: 1px solid var(--white-color);
 }
 .card .Price{
@@ -346,12 +352,12 @@ nav{
     }
 }
 .card button {
-    padding: 10px 20px;
+    padding: 10px;
     border: none;
     border-radius: 6px;
     background: var(--red-colot);
     color: var(--white-color);
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 700;
     cursor: pointer;
     transition: background 0.3s;
@@ -441,9 +447,14 @@ nav{
 .card {
     width: calc(100vw - 32px);
 }
+.card .imgCo{
+
+height: 300px;
+}
 .card img {
     width: 100%;
-    height: 800px;
+    max-width: 450px;
+    min-width: 300px
 }
 .card h3 {
     font-size: 24px
@@ -496,6 +507,7 @@ nav{
     .card p {
     border: none;
 }
+
 .card img {
     position: relative;
 }
@@ -531,6 +543,9 @@ nav{
     
 }
 }
+.expert .card .imgCo{
+    height: 300px;
+}
 
 
 .NewExp{
@@ -542,17 +557,17 @@ nav{
     align-items: flex-start;
 
 .Left{
-    width: calc(55vw - 120px);
+    width: calc(45vw - 120px);
     display: flex;
     flex-direction: column;
     gap: 40px;
     img{
         width: 100%;
-        max-height: 500px;
+        /* max-height: 500px; */
     }
 }
 .Right{
-    width: calc(42vw - 120px);
+    width: calc(50vw - 120px);
     color: var(--white-color);
     text-align: right;
     h1{
@@ -704,22 +719,21 @@ nav{
 }
 
 .testimonial-image {
-    width: 30%;
-    min-width: 340px;
-    height: 450px;
+    width: 40%;
+    /* min-width: 340px; */
     border-radius: 10px;
     margin-bottom: 15px;
 }
 
 .testimonial-text {
-    width: 40%;
+    width: 50%;
     font-size: 24px;
     background: var(--darkG-color);
     color: var(--white-color);
     padding: 15px;
     border-radius: 10px;
     line-height: 1.8;
-    transform: translatex(-130px);
+    transform: translatex(-100px);
 }
 
 /* Buttons */
@@ -768,14 +782,14 @@ nav{
 }
 @media (max-width: 1200px){
 .testimonial-text {
-    width: 40%;
+    width: 50%;
     font-size: 18px;
     background: var(--darkG-color);
     color: var(--white-color);
     padding: 15px;
     border-radius: 10px;
     line-height: 1.8;
-    transform: translatex(-90px);
+    transform: translatex(-70px);
 }
 }
 @media (max-width: 920px){
@@ -796,12 +810,12 @@ nav{
 .testimonial-image {
     width: 60%;
     min-width: 300px;
-    height: 400px;
 }
 
 .testimonial-text {
     width: 60%;
-    min-width: 300px;
+    min-width: 250px;
+    height: fit-content;
     font-size: 18px;
     transform: translatex(0px);
     transform: translateY(-130px);
@@ -1067,10 +1081,15 @@ footer{
 .course-page{
     padding: 0px 0px;
     position: relative;
+    /* width: 100vw; */
+    height: 700px;
+    background-color: rgb(20, 18, 18);
+    overflow: hidden;
     img{
-    width: 100vw;
-    height: 800px;
-    filter: grayscale(100%);
+        margin: 0 auto;
+        display: block;
+        width: 60%;
+        min-width: 300px;
 }
 }
 .course-page .imgCard{
@@ -1080,15 +1099,17 @@ footer{
     align-items: center;
     position: absolute;
     top: 10%;
-   
     img{
-        width: 34px;
+        width: 50px;
+        min-width: 15px;
         height: auto;
+        filter: none;
+        margin-bottom: 10px;
     }
     h1{
         color: var(--white-color);
         font-size: 60px;
-        margin-bottom: 100px;
+        margin-bottom: 40px;
     }
 }
 .TopImg {
@@ -1102,17 +1123,18 @@ button{
     background-color: var(--darkG-color);
     color: var(--white-color);
     font-size: 16px;
-    margin-bottom: 250px;
+    margin-bottom: 200px;
 }
 }
 .ImgLine{
     display: flex;
     flex-direction: row;
-    gap: 25px;
+    gap: 40px;
     margin-bottom: 50px;
     color: var(--white-color);
     div{
         text-align: center;
+        
     }
 }
 .imgCard .B-Btn{
@@ -1137,9 +1159,7 @@ button{
 
 @media (max-width: 920px){
     .course-page{
-    img{
-    height: 600px;
-}
+        height: 400px;
 }
 .course-page .imgCard{
     top: 5%;
@@ -1148,22 +1168,23 @@ button{
         width: 24px;
     }
     h1{
-        font-size: 32px;
-        margin-bottom: 75px;
+        font-size: 28px;
+        margin-bottom: 25px;
         text-align: center;
     }
 }
 .TopImg {
     padding-right: 16px;
 button{
-    font-size: 14px;
-    margin-bottom: 150px;
-    padding: 10px;
+    font-size: 12px;
+    margin-bottom: 105px;
+    padding: 5px;
 }
 }
 .ImgLine{
     padding: 0 16px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
+    gap: 15px;
     div{
         text-align: center;
     }
@@ -1173,7 +1194,8 @@ button{
 }
 .imgCard .B-Btn{
     button{
-        font-size: 18px;
+        font-size: 16px;
+        padding: 10px;
     }
         
 }
@@ -1184,18 +1206,19 @@ button{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     padding-bottom: 200px;
 }
 .carscol{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 26%;
+    width: 50%;
     div{
+        height: 550px;
+        overflow: hidden;
         img{
             width: 100%;
-            max-height: 300px;
         }
         background-color: var(--darkG-color);
         border-radius: 10px;
