@@ -870,10 +870,11 @@ height: 450px;
 .testimonial-text {
     width: 60%;
     min-width: 250px;
-    height: fit-content;
+    height: 200px;
     font-size: 18px;
     transform: translatex(0px);
     transform: translateY(-130px);
+    line-height: 150%;
 }
 
 .testimonial-prev,
@@ -881,7 +882,7 @@ height: 450px;
     width: 44px;
     height: 44px;
     top: 40%;
-    font-size: 34px;
+    font-size: 20px;
 }
 
 
@@ -961,23 +962,23 @@ height: 450px;
 @media (max-width:920px){
     .NewCoach{
         img{
-            min-height: 400px;
+            height: 300px;
         }
     .JoinUs{
         padding-right: 16px;
-        top: 100px;
+        top: 80px;
         h1{
-            font-size: 40px;
+            font-size: 30px;
         }
         p{
-            font-size: 18px;
+            font-size: 14px;
             margin-top: 30px;
             margin-bottom: 20px;
         }
         button{
-            width: 200px;
-            padding: 20px 0;
-            font-size: 18px;
+            width: 100px;
+            padding: 5px 0;
+            font-size: 14px;
         }
     }
 }
