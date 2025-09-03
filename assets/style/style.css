@@ -43,13 +43,14 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding-top: 15px !important;
-    padding-bottom: 15px !important;
+    /* padding-bottom: 15px !important; */
     img{
-        width: 70px;
+        width: 120px;
+        transform: translateX(30px);
     }
     .Left-nav{
         display: flex;
-        gap: 10px;
+        gap: 0px;
         align-items: center;
 
         button{
@@ -58,7 +59,7 @@ nav{
             border-radius: 15px;
             padding: 10px 20px;
             color: var(--white-color);
-            font-size: 18px;
+            font-size: 16px;
             cursor: pointer;
         }
         .menu{
@@ -67,11 +68,12 @@ nav{
                 padding: 0;
                 img{
                     width: 50px;
+                    transform: translateX(0px);
                 }
             }
             .CartBtn{
-                width: 40px;
-                filter: brightness(1000%);
+                width: 30px;
+                transform: translateX(0px);
             }    
     }
     .MiddleNav{
@@ -81,7 +83,7 @@ nav{
             list-style: none;
             color: var(--white-color);
             gap: 20px;
-            font-size: 18px;
+            font-size: 16px;
             cursor: pointer;
             a{
                 text-decoration: none;
@@ -93,7 +95,7 @@ nav{
     background: none;
     border: none;
     color: var(--white-color);
-    font-size: 18px;
+    font-size: 16px;
     cursor: pointer;
     }
 
@@ -166,10 +168,10 @@ nav{
     }
 nav{
     padding-top: 16px !important;
-    padding-bottom: 16px !important;
+    padding-bottom: 0px !important;
     img{
-        width: 40px;
-        
+        width: 100px;
+        transform: translateX(15px);
     }
     .Left-nav{
         gap: 10px;
@@ -1106,7 +1108,7 @@ footer{
     .LogoFooter{
         align-self: center;
         img{
-            width: 80px;
+            width: 200px;
         }
     }
 }
@@ -1145,11 +1147,11 @@ footer{
     }}
     .LogoFooter{
         position: absolute;
-        top: 75%;
-        left: calc(50% - 32px);
+        top: 52%;
+        left: calc(50% - 128px);
 
         img{
-            width: 80px;
+            width: 220px;
         }
     }
 }}
