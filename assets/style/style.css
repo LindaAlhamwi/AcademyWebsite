@@ -46,7 +46,8 @@ nav{
     /* padding-bottom: 15px !important; */
     img{
         width: 120px;
-        transform: translateX(30px);
+        transform: translateX(30px) translateY(-1px);
+
     }
     .Left-nav{
         display: flex;
@@ -257,31 +258,33 @@ nav{
 
 @media (max-width: 920px){
     .hero{
-    flex-direction: column;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        flex-direction: column;
     align-items: center;
     gap: 20px;
     position: relative;
     img{
         width: 100%;
-        height: 400px;
+        height: 300px;
         object-fit: cover;
     }
     .Desc{
         position: absolute;
-        top: 73%;
-        width: 60%;
+        top: 75%;
+        width: 65%;
         min-width: 225px;
-        max-width: 500px;
+        max-width: 400px;
         flex-direction: column;
         align-items: center;
         h1{
-            font-size: 24px;
-            font-weight: 900;
+            font-size: 22px;
+            font-weight: 700;
             align-self: flex-end;
         }
         p{
-            font-size: 16px;
-            font-weight: 900;
+            font-size: 10px;
+            font-weight: 400;
             margin-top: 10px;
             margin-bottom: 10px;
             align-self: flex-end;
@@ -290,8 +293,9 @@ nav{
             align-self: center;
             width: 100%;
             min-width: 202px;
-            font-size: 20px;
+            font-size: 16px;
             margin-bottom: 10px;
+            padding: 5px;
         }
         
     }
@@ -401,14 +405,15 @@ margin-bottom: 20px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 30px;
-    color: var(--white-color);
     background: rgba(0,0,0,0.5);
     padding: 10px;
     border-radius: 50%;
     cursor: pointer;
     z-index: 10;
     user-select: none;
+    img{
+        width: 24px;
+    }
 }
 
 .arrow.left { left: 10px; }
@@ -435,6 +440,7 @@ margin-bottom: 20px;
 @media (max-width: 1200px)
     {
     .ourCourses{
+        
     h2{
         font-size: 38px;
     }
@@ -462,6 +468,7 @@ margin-bottom: 20px;
 /* Small screens */
 @media (max-width: 920px){
 .ourCourses{
+    padding-top: 150px;
         width: 100vw;
     h2{
         font-size: 20px;
@@ -612,8 +619,8 @@ margin-bottom: 20px;
 .expert .card .imgCo{
     border-radius: 10px;
     height: 300px;
-   backface-visibility:visible;
-   transform-style: preserve-3d;
+    backface-visibility:visible;
+    transform-style: preserve-3d;
 }
 .expert .card .imgCo:hover{
     animation: turn 0.5s ease forwards;
@@ -860,10 +867,11 @@ margin-bottom: 20px;
     transform: translateY(-50%);
     background: var(--darkG-color);
     border: none;
-    color: var(--white-color);
-    font-size: 40px;
     cursor: pointer;
     border-radius: 50%;
+    img{
+        width: 24px;
+    }
 }
 
 .testimonial-prev:hover,
