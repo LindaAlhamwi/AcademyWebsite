@@ -415,7 +415,10 @@ margin-bottom: 20px;
         width: 24px;
     }
 }
-
+.arrow:hover{
+    background-color: var(--darkG-color);
+    opacity: 0.9;
+}
 .arrow.left { left: 10px; }
 .arrow.right { right: 10px; }
 

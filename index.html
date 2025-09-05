@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Academy</title>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/style.css"> 
 </head>
 <body>
-    <nav class="whiteSpacing">  
+    <!-- Header part that has nav and hero -->
+    <!-- Navbar content (Left - Middle then the logo) -->
+    <nav class="whiteSpacing"> 
+        
         <div class="Left-nav">
             <button class="menu"><img src="./assets/imgs/menu.svg" alt="menuIcon"></button>
             <button>تسجيل الدخول</button>
@@ -33,6 +36,10 @@
         </div>
             <img src="./assets/imgs/logo The Academy Plus 2-05.svg" alt="">
         </nav>
+        <!-- End of Nav -->
+
+
+        <!-- Hero dection that has (left side and right one, int the left there is an image while we have text and button in the right) -->
         <div class="hero whiteSpacing">
             <img src="./assets/imgs/hero.jpg" alt="">
             <div class="Desc">
@@ -44,6 +51,7 @@
             </div>
         </div>
 
+        <!-- The first group of slides -->
         <section id="Courses" class="ourCourses whiteSpacing">
             <h2>تصفح الدورات التالية</h2>
             <div class="slider">
@@ -154,6 +162,7 @@
             <button class="ShowMore">تصفح المزيد</button>
 </section>
 
+<!-- The second group of slides -->
 <section class="ourCourses diploma whiteSpacing">
             <h2>تصفح الدبلومات التالية</h2>
             <div class="slider">
@@ -263,6 +272,7 @@
             <button class="ShowMore">تصفح المزيد</button>
 </section>
 
+<!-- The third one -->
 <section class="ourCourses bundle whiteSpacing">
             <h2>تصفح الباقات التالية</h2>
             <div class="slider">
@@ -372,6 +382,8 @@
             <button class="ShowMore">تصفح المزيد</button>
 </section>
 
+
+<!-- The slides of experts اسأل خبيراً -->
 <section class="ourCourses expert whiteSpacing">
             <h2>استشر خبيراً</h2>
             <div class="slider">
@@ -432,6 +444,7 @@
             <button class="ShowMore">تصفح المزيد</button>
 </section>
 
+<!-- تجربة جديدة -->
 <section class="whiteSpacing NewExp">
     <div class="Left">
         <img src="./assets/imgs/hero.jpg" alt="">
@@ -451,6 +464,7 @@
     </div>
 </section>
 
+<!-- students' opinions -->
 <section class=" testimonial-slider">
     <div class="bigc whiteSpacing">
     <h2 class="testimonial-title">ماذا قال المتدربين عن ماستري أكاديمي</h2>
@@ -506,7 +520,7 @@
     </div>
 </section>
 
-
+<!-- If your are a good teacher join us -->
 <section class="whiteSpacing NewCoach">
     <img src="./assets/imgs/hero-player.png" alt="">
     <div class="JoinUs">
@@ -518,6 +532,8 @@
 
 </section>
 
+
+<!-- frequent asked Qs -->
 <section class="faq NewSpacing">
     <h2>أسئلة مكررة FAQ</h2>
 
@@ -561,6 +577,7 @@
     </details>
 </section>
 
+<!-- Footer -->
 <footer>
     <div class="LogoFooter">
     <img src="./assets/imgs/logo The Academy Plus 2-052.svg" alt="">
@@ -593,7 +610,7 @@
     
 </footer>
 
-
+<!-- Js part -->
 <script>
     document.querySelectorAll(".slider").forEach(slider => {
     const track = slider.querySelector(".slider-track");
